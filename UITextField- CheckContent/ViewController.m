@@ -11,7 +11,7 @@
 @interface ViewController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet UIButton *dengluBtn;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
@@ -23,7 +23,7 @@
     _textField.delegate = self;
     _textField.secureTextEntry = YES;
     
-    [_dengluBtn addTarget:self action:@selector(denglu) forControlEvents:UIControlEventTouchUpInside];
+    [_loginBtn addTarget:self action:@selector(denglu) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -37,11 +37,11 @@
 {
     if (textField == _textField) {
         if (range.location > 0 || string.length > 0) {
-            _dengluBtn.backgroundColor = [UIColor yellowColor];
-            _dengluBtn.enabled = YES;
+            _loginBtn.backgroundColor = [UIColor yellowColor];
+            _loginBtn.enabled = YES;
         }else{
-            _dengluBtn.backgroundColor = [UIColor blueColor];
-            _dengluBtn.enabled = NO;
+            _loginBtn.backgroundColor = [UIColor blueColor];
+            _loginBtn.enabled = NO;
         }
     }
     return YES;

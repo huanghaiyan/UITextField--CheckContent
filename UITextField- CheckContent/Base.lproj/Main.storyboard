@@ -34,7 +34,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="dengluBtn" destination="jIZ-qQ-bKc" id="g5G-hR-N57"/>
+                        <outlet property="loginBtn" destination="jIZ-qQ-bKc" id="mQW-Oa-D3Y"/>
                         <outlet property="textField" destination="LBu-70-Imd" id="sTh-Pc-Jbd"/>
                     </connections>
                 </viewController>
